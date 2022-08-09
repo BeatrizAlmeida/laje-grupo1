@@ -29,10 +29,10 @@ public class PlayerMove : MonoBehaviour{
             animate.inMovement = false;
         }
 
-        if((movementVector.x > 0 || movementVector.y > 0) && !facingRight) {    //Checa pra qual lado o personagem está virado e o vira dependendo da direção
+        if(movementVector.x > 0 && !facingRight) {    //Checa pra qual lado o personagem está virado e o vira dependendo da direção
             Flip();
         }
-        if ((movementVector.x < 0 || movementVector.y < 0) && facingRight) {
+        if(movementVector.x < 0 && facingRight) {
             Flip();
         }
 
